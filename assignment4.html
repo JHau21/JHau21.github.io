@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head> </head>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.chessPieceGeneral {
+				font-size: 30px;
+				padding-left: 10px;
+			}
+
+			.white {
+				color: white;
+			}
+
+			.black {
+				color: black;
+			}
+
+			.navBarContainer {
+				width: 100%;
+				height: 40px;
+			}
+
+			.navBarList {
+				height: inherit;
+				width: inherit;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+				border-bottom: 2px solid darkgrey;
+				padding-bottom: 10px;
+			}
+
+			.navBarLinks {
+				text-decoration: none;
+				color: darkgrey;
+			}
+
+			.navBarLinks:hover {
+				color: rgb(173, 80, 80);
+			}
+
+			.labelInputRow {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				width: 25%;
+				justify-content: space-between;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
 	<body>
 		<!-- Challenge 1 -->
-		<div></div>
+		<div class="navBarContainer">
+			<nav>
+				<ul class="navBarList">
+					<a class="navBarLinks" href="http://JHau21.github.io/index.html">
+						Home
+					</a>
+					<a class="navBarLinks" href="http://JHau21.github.io/assignment1.html">
+						Hello World!
+					</a>
+					<a class="navBarLinks" href="http://JHau21.github.io/assignment3.html">
+						Encyclopedia
+					</a>
+					<a class="navBarLinks" href="http://JHau21.github.io/assignment4.html">
+						HTML Challenges
+					</a>
+				</ul>
+			</nav>
+		</div>
 		<!-- Challenge 2 -->
 		<div>
+			<h2>
+				Challenge 2: Build a Chessboard
+			</h2>
 			<table style="border: 3px solid black">
 				<thead>
 					<tr>
@@ -16,11 +86,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9814;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9816;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -28,11 +106,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9815;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9813;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -40,11 +126,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9812;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9815;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -52,11 +146,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9816;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9814;
+							</div>
+						</td>
 					</tr>
 				</tdead>
 				<tbody>
@@ -64,7 +166,11 @@
                         <td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -72,11 +178,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -84,11 +198,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -96,11 +218,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9817;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -108,7 +238,11 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9817;
+							</div>
+						</td>
 					</tr>
 					<tr>
 						<td
@@ -318,11 +452,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -330,11 +472,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -342,11 +492,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -354,16 +512,29 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9823;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9823;
+							</div>
+						</td>
 					</tr>
-					<tr><td
+					<tr>
+						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9820;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -371,11 +542,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9822;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9821;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -383,11 +562,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9819;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9818;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -395,11 +582,19 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9821;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="height: 50px; width: 50px"
-						></td>
+						>
+							<div class="chessPieceGeneral black">
+								&#9822;
+							</div>
+						</td>
 						<td
 							class="tg-0lax"
 							style="
@@ -407,13 +602,52 @@
 								width: 50px;
 								background-color: black;
 							"
-						></td>
+						>
+							<div class="chessPieceGeneral white">
+								&#9820;
+							</div>
+						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<!-- Challenge 3 -->
-		<div></div>
+		<div>
+			<h2>
+				Challenge 3: Create a Form
+			</h2>
+			<form>
+				<div class="labelInputRow">
+					<label for="ffood">
+						Favorite Food:
+					</label>
+					<input id="ffood" type="text">
+				</div>
+				<div class="labelInputRow">
+					<label for="fcolor">
+						Select the Best Color:
+					</label>
+					<div class="labelInputRow">
+						<input id="fcolor" type="radio">
+						<label>Red</label>
+						<input id="fcolor" type="radio">
+						<label>Blue</label>
+						<input id="fcolor" type="radio">
+						<label>Green</label>
+						<input id="fcolor" type="radio">
+						<label>Black</label>
+						<input id="fcolor" type="radio">
+						<label>White</label>
+					</div>
+				</div>
+				<div class="labelInputRow">
+					<label for="fcity">
+						Favorite City: 
+					</label>
+					<input id="fcity" type="text">
+				</div>
+			</form>
+		</div>
 		<!-- Challenge 4 -->
 		<div></div>
 	</body>
