@@ -45,9 +45,137 @@
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				width: 25%;
+				width: 29%;
 				justify-content: space-between;
 				margin-bottom: 10px;
+			}
+
+			.radioOptionsContainer {
+				width: 50%;
+			}
+
+			.atlsSearch {
+				width: 530px;
+			}
+
+			.googlePageContainer {
+				flex: 1;
+				padding-left: 25px;
+				padding-right: 25px;
+				background-color: #202124;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+
+			.webPageDisplayContainer {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				margin-bottom: 20px;
+			}
+
+			.webPageDisplayFirst {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				margin-bottom: 5px;
+			}
+
+			.webPageDisplayUrl {
+				padding: 0;
+				margin: 0;
+				font-size: 12px;
+				color: #d4d4d4;
+				font-family: sans-serif;
+			}
+
+			.webPageDisplayDescription {
+				padding: 0;
+				margin: 0;
+				font-size: 12px;
+				color: #d4d4d4;
+				font-family: sans-serif;
+			}
+
+			.webPageDisplayHeader {
+				padding: 0;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				font-family: sans-serif;
+			}
+
+			.webPageSubDisplayUrl {
+				font-size: 12px;
+				font-family: sans-serif;
+			}
+
+			.webPageSubDisplayRow {
+				padding-top: 10px;
+				padding-left: 15px;
+				margin: 0;
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				width: 500px;
+				justify-content: space-evenly;
+			}
+
+			.webPageSubDisplayColumn {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: 1;
+			}
+
+			.webPageSubDisplayContainer {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				flex: 1;
+				margin-bottom: 10px;
+			}
+
+			.webPageSubDisplayDescription {
+				margin: 0;
+				padding: 0;
+				font-size: 12px;
+				color: #d4d4d4;
+				font-family: sans-serif;
+				width: 200px;
+			}
+
+			.webPageSubDisplayHeader {
+				padding: 0;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				font-family: sans-serif;
+			}
+
+			.webPageSubDisplayUrl {
+				margin-top: 10px;
+				padding: 0;
+				font-size: 12px;
+				font-family: sans-serif;
+				margin-left: 15px;
+			}
+
+			.resultsCounter {
+				font-size: 13px;
+				color: #9aa0a6;
+				font-family: sans-serif;
+			}
+
+			.link {
+				text-decoration: none;
+				color: #8ab4f8;
+			}
+
+			.link:hover {
+				text-decoration: underline;
+			}
+
+			.link:visited {
+				color: #c58af9;
 			}
 		</style>
 	</head>
@@ -621,13 +749,13 @@
 					<label for="ffood">
 						Favorite Food:
 					</label>
-					<input id="ffood" type="text">
+					<input id="ffood" type="text" class="radioOptionsContainer">
 				</div>
 				<div class="labelInputRow">
 					<label for="fcolor">
 						Select the Best Color:
 					</label>
-					<div class="labelInputRow">
+					<div class="radioOptionsContainer">
 						<input id="fcolor" type="radio">
 						<label>Red</label>
 						<input id="fcolor" type="radio">
@@ -641,14 +769,161 @@
 					</div>
 				</div>
 				<div class="labelInputRow">
-					<label for="fcity">
-						Favorite City: 
+					<label for="birthday">
+						Select Your Birthday: 
 					</label>
-					<input id="fcity" type="text">
+					<input id="birthday" type="date" class="radioOptionsContainer">
 				</div>
 			</form>
 		</div>
 		<!-- Challenge 4 -->
-		<div></div>
+		<div class="atlsSearch">
+			<h2>
+				Challenge 4: A Google Search Page
+			</h2>
+			<div class="googlePageContainer">
+				<p class="resultsCounter">About 3,400,000,000 results (0.86 seconds)</p>
+				<div class="webPageDisplayFirst">
+					<p class="webPageDisplayUrl">https://www.colorado.edu atlas</p>
+					<a class="link" href="https://www.colorado.edu/atlas/">
+						<h4 class="webPageDisplayHeader">ATLAS Institute | University of Colorado Boulder</h4>
+					</a>
+					<p class="webPageDisplayDescription">
+						ATLAS is an interdisciplinary institute for radical creativity and invention.
+						We transform ingenious ideas into reality through research, ...
+					</p>
+					<div class="webPageSubDisplayColumn">
+						<div class="webPageSubDisplayRow">
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/academics/grad">
+									<h4 class="webPageSubDisplayHeader">
+										Graduate Degrees in Creative ...
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									Radically interdisciplinary, ATLAS graduate programs nurture ...
+								</p>
+							</div>
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/about-atlas">
+									<h4 class="webPageSubDisplayHeader">
+										About 
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									ATLAS is an interdisciplinary institute for radical creativity and ...
+								</p>
+							</div>
+						</div>
+						<div class="webPageSubDisplayRow">
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/academics">
+									<h4 class="webPageSubDisplayHeader">
+										Academics
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									Granted through the College of Engineering and Applied ...
+								</p>
+							</div>
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/academics/undergraduate">
+									<h4 class="webPageSubDisplayHeader">
+										Undergraduate Programs
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									Awarded through the College of Engineering and Applied ...
+								</p>
+							</div>
+						</div>
+						<div class="webPageSubDisplayRow">
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/faculty">
+									<h4 class="webPageSubDisplayHeader">
+										Faculty
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									Lecturer, co-chair Board of Advisors • DESIGN, AR/VR ...
+								</p>
+							</div>
+							<div class="webPageSubDisplayContainer">
+								<a class="link" href="https://www.colorado.edu/atlas/research-creative">
+									<h4 class="webPageSubDisplayHeader">
+										Research + Creative
+									</h4>
+								</a>
+								<p class="webPageSubDisplayDescription">
+									Check out ATLAS Research Showcase 2020.
+								</p>
+							</div>
+						</div>
+						<a class="link" href="https://www.google.com/search?q=atlas+institute+site:colorado.edu&rlz=1C1CHBF_enUS975US975&sxsrf=APq-WBvzfuMcJOLv3rTx_UoGqOjt9UMlig:1644180066877&sa=X&ved=2ahUKEwjZq9SG-Ov1AhWPFTQIHRw0BisQrAN6BAgHEAE">
+							<p class="webPageSubDisplayUrl">
+								More results from colorado.edu
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="webPageDisplayContainer">
+					<p class="webPageDisplayUrl">https://www.colorado.edu innovate atlas-institute</p>
+					<a class="link" href="https://www.colorado.edu/innovate/atlas-institute">
+						<h4 class="webPageDisplayHeader">ATLAS Institute | Innovation and Entrepreneurship - University of ...</h4>
+					</a>
+					<p class="webPageDisplayDescription">
+						Resource that sponsors diverse interdisciplinary academic and research programs, 
+						challenging community members to explore, innovate, create and design well ...
+					</p>
+				</div>
+				<div class="webPageDisplayContainer">
+					<p class="webPageDisplayUrl">https://www.colorado.edu school atlas-cu-boulder</p>
+					<a class="link" href="https://www.colorado.edu/school/atlas-cu-boulder">
+						<h4 class="webPageDisplayHeader">ATLAS Institute | University of Colorado Boulder</h4>
+					</a>
+					<p class="webPageDisplayDescription">
+						ATLAS is an interdisciplinary institute for radical creativity and invention where 
+						ingenious ideas become reality. · ATLAS Institute at CU Boulder. View all open ...
+					</p>
+				</div>
+				<div class="webPageDisplayContainer">
+					<p class="webPageDisplayUrl">https://www.colorado.edu wiki Atlas</p>
+					<a class="link" href="https://www.colorado.edu/wiki/Atlas">
+						<h4 class="webPageDisplayHeader">ATLAS Institute | University of Colorado Boulder</h4>
+					</a>
+					<p class="webPageDisplayDescription">
+						It is an institute focused on the study and development of alchemy, but its members
+						broke off from the mainstream modern practice of alchemy that originated in ...
+					</p>
+				</div>
+				<div class="webPageDisplayContainer">
+					<p class="webPageDisplayUrl">https://www.internationalaffairshousing.org</p>
+					<a class="link" href="https://www.internationalaffairshousing.org">
+						<h4 class="webPageDisplayHeader">ATLAS Institute | University of Colorado Boulder</h4>
+					</a>
+					<p class="webPageDisplayDescription">
+						Atlas Institute for International Affairs - The Harmony of Opposite Tensions. ...Atlas
+						Institute. The World's Leading Open-Access Think-Tank and Publisher ... 
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Challenge 5 -->
+		<div>
+			<h2>
+				Challenge 5: Accessibility Concerns
+			</h2>
+			<p>
+				At the moment I think there are a variety of accessibility concerns with Challenge 4. The largest conern,
+				in my opinion is addressing the best practice of making everything on the website accessible via keyboard.
+				Since Challenge 4 contains so many different links and is already nested somewhat far down the page, a user
+				who is unable to use a mouse or scroll pad properly will have quite a bit of trouble getting to a desired
+				link, assuming that link is pretty far down. Said user would need to tab through essentially all of the content
+				on the page to get to the lowest link in the challenge. In my opinion, the best way to remedy this would be to
+				add a table of contents at the top to allow the user to quickly access challenge 4. This would also be good
+				to generally access every challenge too because it would keep users from needing to tab or scroll through 
+				the entire page. 
+			</p>
+		</div>
 	</body>
 </html>
