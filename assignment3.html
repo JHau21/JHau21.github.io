@@ -3,8 +3,64 @@
 	<head>
 		<title>Ginger Bread</title>
 		<meta charset="UTF-8" />
+		<style>
+			.navBarContainer {
+				width: 100%;
+				height: 40px;
+			}
+
+			.navBarList {
+				height: inherit;
+				width: inherit;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+				border-bottom: 2px solid darkgrey;
+				padding-bottom: 10px;
+			}
+
+			.navBarLinks {
+				text-decoration: none;
+				color: darkgrey;
+			}
+
+			.navBarLinks:hover {
+				color: rgb(173, 80, 80);
+			}
+		</style>
 	</head>
 	<body>
+		<div class="navBarContainer">
+			<nav>
+				<ul class="navBarList">
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/index.html"
+					>
+						Home
+					</a>
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment1.html"
+					>
+						Hello World!
+					</a>
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment3.html"
+					>
+						Encyclopedia
+					</a>
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment4.html"
+					>
+						HTML Challenges
+					</a>
+				</ul>
+			</nav>
+		</div>
 		<div id="ginger_bread">
 			<h1>Ginger Bread</h1>
 			<hr />
