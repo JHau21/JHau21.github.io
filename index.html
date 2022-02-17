@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Short Biography</title>
-    <meta charset="UTF-8" />
-    <style>
-      .navBarContainer {
-        width: 100%;
-        height: 40px;
-      }
-
-      .navBarList {
-        height: inherit;
-        width: inherit;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        border-bottom: 2px solid darkgrey;
-        padding-bottom: 10px;
-      }
-
-      .navBarLinks {
-        text-decoration: none;
-        color: darkgrey;
-      }
-
-      .navBarLinks:hover {
-        color: rgb(173, 80, 80);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="navBarContainer">
-      <nav>
-        <ul class="navBarList">
-          <a class="navBarLinks" href="http://JHau21.github.io/index.html">
+	<head>
+		<title>Short Biography</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<div class="navBarContainer">
+			<nav>
+				<ul class="navBarList">
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/index.html"
+					>
 						Home
 					</a>
-          <a class="navBarLinks" href="http://JHau21.github.io/assignment1.html">
-            Hello World!
-          </a>
-          <a class="navBarLinks" href="http://JHau21.github.io/assignment3.html">
-            Encyclopedia
-          </a>
-          <a class="navBarLinks" href="http://JHau21.github.io/assignment4.html">
-            HTML Challenges
-          </a>
-          <a
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment1.html"
+					>
+						Hello World!
+					</a>
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment3.html"
+					>
+						Encyclopedia
+					</a>
+					<a
+						class="navBarLinks"
+						href="http://JHau21.github.io/assignment4.html"
+					>
+						HTML Challenges
+					</a>
+					<a
 						class="navBarLinks"
 						href="http://JHau21.github.io/assignment5.html"
 					>
 						HTML Challenges Revised
 					</a>
-        </ul>
-      </nav>
-    </div>
-    <!-- <img src="img/me.jpg" height="150" width="100"/> -->
-    <h1 style="font-family: sans-serif">
+				</ul>
+			</nav>
+		</div>
+		<!-- <img src="img/me.jpg" height="150" width="100"/> -->
+		<!-- <h1 style="font-family: sans-serif">
         <em><b>Short Biography</b></em>
     </h1>
     <h2 style="font-family: sans-serif">Welcome!</h2>
@@ -80,6 +67,53 @@
     </p>
     <p style="font-family: sans-serif">
         Click <a href="https://www.youtube.com/watch?v=-O5kNPlUV7w"><em>here</em></a> to see my favorite <b>SFW YouTube video</b>!
-    </p>
-  </body>
+    </p> -->
+		<div class="bioContainer">
+			<h1 class="headerOne fontGeneral">Short Biography</h1>
+			<div class="descriptionContainer fontGeneral">
+				<h2 class="headerTwo">Welcome!</h2>
+				<h4 class="headerFour">Hello,</h4>
+				<p class="pFontMedium">
+					My name is Jack Hau and I am a Computer Science major
+					with a minor in Creative Technology and Design and my
+					pronouns are he/him/his.
+				</p>
+				<p class="pFontMedium">
+					I've done quite a bit of Software Development over the
+					last year and a half and have grown very passionate
+					about it. I am hoping to learn some new HTML, CSS, and
+					Javascript tricks in this course and gain some more
+					knowledge of web development. In my freetime you can
+					usually find me lifting weights, but I am also very
+					passionate about hiking and skiing. I also am involved
+					in a fraternity, being the VP of Administration and am
+					currently developing a website for my Mom's business,
+					as well as an SMS API to help me with my fraternity
+					position!
+				</p>
+			</div>
+			<div class="extraContainer fontGeneral">
+				<h2 class="headerTwo">Extra Content</h2>
+				<div class="contentContainer">
+					<p class="pFontMedium">
+						Want to see a picture of me or my favorite SFW
+						Youtube video?
+					</p>
+					<div class="buttonsContainer fontGeneral">
+						<a
+							href="https://www.youtube.com/watch?v=-O5kNPlUV7w"
+							><button class="buttonStyle bold">
+								Youtube
+							</button></a
+						>
+						<a href="img/me.jpg"
+							><button class="buttonStyle bold">
+								Me
+							</button></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
