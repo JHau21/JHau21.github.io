@@ -22,6 +22,9 @@
 .navBarLinks {
 	text-decoration: none;
 	color: #9fa1a2;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	height: 100%;
 }
 
 .navBarLinks:hover {
@@ -93,21 +96,19 @@
 
 .descriptionContainer {
 	width: 80%;
-	border: 3px solid #550000;
-	background-color: #ffffff;
+	background-color: #ebebeb;
 	color: #000000;
 	padding: 20px;
-	/* box-shadow: 40px 40px 0px #000000; */
+	box-shadow: 200px 40px 0px #550000;
 	margin-bottom: 50px;
 }
 
 .extraContainer {
 	width: 80%;
-	border: 3px solid #550000;
-	background-color: #ffffff;
+	background-color: #ebebeb;
 	color: #000000;
 	padding: 20px;
-	/* box-shadow: -40px 40px 0px #000000; */
+	box-shadow: -200px 40px 0px #980000;
 	margin-bottom: 50px;
 }
 
@@ -128,20 +129,23 @@
 .buttonStyle {
 	border: 3px solid #000000;
 	color: #000000;
-	background-color: #ffffff;
+	background-color: transparent;
 	height: 40px;
 	width: 200px;
+	box-shadow: 0;
+	transition: box-shadow 0.5s ease-in-out;
 }
 
 .buttonStyle:hover {
 	border: 3px solid #550000;
 	color: #550000;
-	background-color: #ffffff;
+	background-color: transparent;
 	cursor: pointer;
+	box-shadow: 5px 5px 0px #550000;
 }
 
 .buttonStyle:active {
 	border: 3px solid #980000;
-	color: #ffffff;
+	color: #ebebeb;
 	background-color: #980000;
 }
