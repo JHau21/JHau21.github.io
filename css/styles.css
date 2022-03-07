@@ -277,7 +277,7 @@
 }
 
 /* Phone */
-@media screen and (max-width: 400px) and (min-width: 0px) {
+@media screen and (max-width: 450px) and (min-width: 0px) {
 	.navBarContainer {
 		width: 100%;
 	}
