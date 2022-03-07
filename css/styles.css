@@ -153,21 +153,131 @@
 
 /* Computer */
 @media screen and (min-width: 1900px) {
-	/* NavBar Styles */
+	.navBarContainer {
+		width: 100%;
+		height: 80px;
+	}
+
+	.navBarList {
+		height: inherit;
+		width: inherit;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		border-bottom: 2px solid #9fa1a2;
+		padding-bottom: 25px;
+	}
+
+	.navBarLinks {
+		text-decoration: none;
+		color: #9fa1a2;
+		font-family: "Roboto", sans-serif;
+		font-size: 26px;
+		height: 100%;
+		margin-top: 20px;
+	}
+
+	.fontGeneral {
+		font-family: "Roboto", sans-serif;
+	}
+
+	.pFontBold {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.pFontMedium {
+		font-size: 24px;
+		font-weight: medium;
+		margin-right: 10px;
+	}
+
+	.headerOne {
+		font-size: 56px;
+		font-weight: medium;
+		min-width: 450px;
+	}
+
+	.headerTwo {
+		font-size: 48px;
+		font-weight: medium;
+	}
+
+	.headerThree {
+		font-size: 40px;
+		font-weight: medium;
+	}
+
+	.headerFour {
+		font-size: 34px;
+		font-weight: medium;
+	}
+
+	.headerFive {
+		font-size: 28px;
+		font-weight: medium;
+	}
+
+	.headerSix {
+		font-size: 26px;
+		font-weight: medium;
+	}
 
 	.bioContainer {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border: 3px solid green;
+	}
+
+	.descriptionContainer {
+		width: 65%;
+		background-color: #ebebeb;
+		color: #000000;
+		padding: 30px;
+		box-shadow: 330px 50px 0px #550000;
+		margin-bottom: 150px;
+	}
+
+	.extraContainer {
+		width: 65%;
+		background-color: #ebebeb;
+		color: #000000;
+		padding: 30px;
+		box-shadow: -330px 50px 0px #980000;
+		margin-bottom: 50px;
+	}
+
+	.buttonStyle {
+		border: 3px solid #000000;
+		color: #000000;
+		background-color: transparent;
+		height: 50px;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		box-shadow: 0;
+		font-size: 24px;
+		transition: box-shadow 0.5s ease-in-out;
+	}
+
+	.buttonStyle:hover {
+		border: 3px solid #550000;
+		color: #550000;
+		background-color: transparent;
+		cursor: pointer;
+		box-shadow: 5px 5px 0px #550000;
+	}
+
+	.buttonStyle:active {
+		border: 3px solid #980000;
+		color: #ebebeb;
+		background-color: #980000;
 	}
 }
 
 /* Phone */
 @media screen and (max-width: 400px) and (min-width: 0px) {
-	/* NavBar Styles */
-
 	.navBarContainer {
 		width: 100%;
 	}
@@ -197,12 +307,12 @@
 	}
 
 	.pFontBold {
-		font-size: 18px;
+		font-size: 13px;
 		font-weight: bold;
 	}
 
 	.pFontMedium {
-		font-size: 16px;
+		font-size: 11px;
 		font-weight: medium;
 		margin-right: 10px;
 	}
@@ -214,27 +324,27 @@
 	}
 
 	.headerTwo {
-		font-size: 40px;
+		font-size: 28px;
 		font-weight: medium;
 	}
 
 	.headerThree {
-		font-size: 32px;
+		font-size: 24px;
 		font-weight: medium;
 	}
 
 	.headerFour {
-		font-size: 26px;
-		font-weight: medium;
-	}
-
-	.headerFive {
 		font-size: 20px;
 		font-weight: medium;
 	}
 
+	.headerFive {
+		font-size: 16px;
+		font-weight: medium;
+	}
+
 	.headerSix {
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: medium;
 	}
 
@@ -243,5 +353,56 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.descriptionContainer {
+		width: 80%;
+		background-color: #ebebeb;
+		color: #000000;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		box-shadow: 50px 20px 0px #550000;
+		margin-bottom: 50px;
+	}
+
+	.extraContainer {
+		width: 80%;
+		background-color: #ebebeb;
+		color: #000000;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		box-shadow: -50px 20px 0px #980000;
+		margin-bottom: 50px;
+	}
+
+	.buttonStyle {
+		border: 3px solid #000000;
+		color: #000000;
+		background-color: transparent;
+		height: 30px;
+		padding-left: 7vw;
+		padding-right: 7vw;
+		box-shadow: 0;
+		font-size: 11px;
+		transition: box-shadow 0.5s ease-in-out;
+		margin-left: 10px;
+	}
+
+	.buttonStyle:hover {
+		border: 3px solid #550000;
+		color: #550000;
+		background-color: transparent;
+		cursor: pointer;
+		box-shadow: 5px 5px 0px #550000;
+	}
+
+	.buttonStyle:active {
+		border: 3px solid #980000;
+		color: #ebebeb;
+		background-color: #980000;
 	}
 }
