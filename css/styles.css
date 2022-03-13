@@ -5,14 +5,213 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 	width: 100%;
-	border: 3px solid red;
 }
 
 /* Non-root styling */
 
-.fontGeneral {
+.bio {
+	text-align: right;
+}
+
+.bioContainer {
+	height: 200px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: inherit;
+	background-color: darkgray;
+}
+
+.bioContent {
+	position: relative;
+	bottom: 82%;
+	left: 6%;
+	height: 100%;
+	width: 94%;
+}
+
+.bioImage {
+	height: 80%;
+	width: 25%;
+	position: relative;
+	top: -5%;
+	left: -20%;
+	box-shadow: 0px 1px 4px #666666;
+}
+
+.bioSubContainer {
+	position: absolute;
+	left: 30%;
+	top: 12%;
+	width: 65%;
+	height: 240px;
+	background-color: lightgray;
+	box-shadow: 0px 1px 4px #666666;
+}
+
+.contentContainer {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 100px; /* Offset to account for starting below navigation bar */
+	width: inherit;
+}
+
+.contentFontTextGeneral {
 	font-family: "Roboto", sans-serif;
+	font-weight: medium;
+}
+
+.contentFontTitleGeneral {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+
+.contentText {
+	margin: 0;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.contentTitle {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 0;
+	font-size: 26px;
+}
+
+.edu {
+	text-align: left;
+}
+
+.eduWorkContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 200px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: inherit;
+	background-color: darkgray;
+}
+
+.eduWorkContent {
+	position: relative;
+	bottom: 82%;
+	left: 2%;
+	height: 100%;
+	width: 88%;
+}
+
+.eduWorkImage {
+	height: 80%;
+	width: 25%;
+	position: relative;
+	top: 30%;
+	left: 90%;
+	box-shadow: 0px 1px 4px #666666;
+}
+
+.eduWorkSubContainer {
+	position: absolute;
+	left: 12%;
+	top: 41%;
+	width: 65%;
+	height: 240px;
+	background-color: lightgray;
+	box-shadow: 0px 1px 4px #666666;
+}
+
+.endPageButtons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: darkgray;
+	width: inherit;
+	height: 80px;
+	padding-top: 10px;
+}
+
+.footerText {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.footerHeader {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.hobbies {
+	text-align: center;
+}
+
+.hobbiesContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 200px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: inherit;
+	background-color: darkgray;
+}
+
+.hobbiesSubContainer {
+	position: absolute;
+	left: 19%;
+	top: 70%;
+	width: 65%;
+	height: 240px;
+	background-color: lightgray;
+	box-shadow: 0px 1px 4px #666666;
+}
+
+.hobbyButton {
+	width: 15vw;
+	height: 30px;
+	font-size: 16px;
+	background-color: transparent;
+	border: 3px solid #000000;
+}
+
+.hobbyButtonTitle {
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.hobbyLinks {
+	text-decoration: none;
+	color: #000000;
+}
+
+.hobbyTitleAndButton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navBarFontGeneral {
+	font-family: "Roboto", sans-serif;
+	font-weight: medium;
 }
 
 .navContainer {
@@ -20,10 +219,15 @@
 	flex-direction: row;
 	align-items: center;
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	padding: 0;
 	margin: 0;
-	border: 3px solid pink;
+	position: fixed;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: 0px 1px 30px #363636;
+	background-color: lightgrey;
+	border-bottom: 5px solid darkgray;
 }
 
 .navBarList {
@@ -35,19 +239,28 @@
 	height: inherit;
 	margin: 0;
 	padding: 0;
-	width: 60%;
-	border: 3px solid blue;
+	width: 50%;
+	font-size: 20px;
 	list-style: none;
 }
 
 .navBarGit {
-	width: 20%;
+	width: 25%;
+	height: inherit;
 	text-align: center;
+	background-color: darkgray;
+	padding-top: 20px;
+	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
 .navBarLinkedIn {
-	width: 20%;
+	width: 25%;
+	height: inherit;
 	text-align: center;
+	background-color: darkgray;
+	padding-top: 20px;
+	padding-left: 10px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
 
 .navBarLinks {
@@ -56,6 +269,7 @@
 }
 
 .sideNavBarLinks {
+	font-size: 26px;
 	color: #000000;
 	text-decoration: none;
 }
