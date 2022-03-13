@@ -14,6 +14,107 @@
 
 /* Non-root styling */
 
+/* Common Styling */
+
+.contentFontTextGeneral {
+	font-family: "Roboto", sans-serif;
+	font-weight: medium;
+}
+
+.contentFontTitleGeneral {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: darkgray;
+	width: inherit;
+	height: 75px;
+	padding-top: 10px;
+}
+
+.footerText {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.footerHeader {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.navBarFontGeneral {
+	font-family: "Roboto", sans-serif;
+	font-weight: medium;
+}
+
+.navContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	z-index: 100;
+	overflow: hidden;
+	box-shadow: 0px 1px 30px #363636;
+	background-color: lightgrey;
+	border-bottom: 5px solid darkgray;
+}
+
+.navBarList {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: inherit;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	font-size: 20px;
+	list-style: none;
+}
+
+.navBarGit {
+	width: 25%;
+	height: inherit;
+	text-align: center;
+	background-color: darkgray;
+	padding-top: 20px;
+	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.navBarLinkedIn {
+	width: 25%;
+	height: inherit;
+	text-align: center;
+	background-color: darkgray;
+	padding-top: 20px;
+	padding-left: 10px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.navBarLinks {
+	color: #000000;
+	text-decoration: none;
+}
+
+.sideNavBarLinks {
+	font-size: 26px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Home Styling */
+
 .bio {
 	text-align: right;
 }
@@ -60,16 +161,6 @@
 	align-items: flex-start;
 	padding-top: 100px; /* Offset to account for starting below navigation bar */
 	width: inherit;
-}
-
-.contentFontTextGeneral {
-	font-family: "Roboto", sans-serif;
-	font-weight: medium;
-}
-
-.contentFontTitleGeneral {
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
 }
 
 .contentText {
@@ -136,28 +227,6 @@
 	justify-content: space-evenly;
 }
 
-.footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: darkgray;
-	width: inherit;
-	height: 80px;
-	padding-top: 10px;
-}
-
-.footerText {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-}
-
-.footerHeader {
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-}
-
 .hobbies {
 	text-align: center;
 }
@@ -209,67 +278,67 @@
 	align-items: center;
 }
 
-.navBarFontGeneral {
-	font-family: "Roboto", sans-serif;
-	font-weight: medium;
+/* Experience Styling */
+
+.betsolContent {
+	width: 80%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 200px;
+	background-color: lightgray;
+	box-shadow: 150px 40px 0px darkgray;
 }
 
-.navContainer {
+.betsolJobBrief {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
-	height: 50px;
-	padding: 0;
-	margin: 0;
-	position: fixed;
-	z-index: 100;
-	overflow: hidden;
-	box-shadow: 0px 1px 30px #363636;
-	background-color: lightgrey;
-	border-bottom: 5px solid darkgray;
-}
-
-.navBarList {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
+	height: inherit;
+	width: 20%;
 	justify-content: space-evenly;
-	width: inherit;
-	height: inherit;
+}
+
+.betsolJobBriefText {
 	margin: 0;
 	padding: 0;
-	width: 50%;
-	font-size: 20px;
-	list-style: none;
 }
 
-.navBarGit {
-	width: 25%;
+.betsolJobDesc {
 	height: inherit;
-	text-align: center;
-	background-color: darkgray;
-	padding-top: 20px;
+	width: 80%;
+	margin-top: 10px;
+}
+
+.betsolJobInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 150px;
+	position: relative;
+	top: -75%;
+	left: 0%;
+	padding: 10px;
+}
+
+.betsolTitle {
+	position: relative;
+	top: -45%;
+	left: -2%;
+	width: 40%;
+	height: 25%;
 	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
-}
-
-.navBarLinkedIn {
-	width: 25%;
-	height: inherit;
-	text-align: center;
 	background-color: darkgray;
-	padding-top: 20px;
-	padding-left: 10px;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+	text-align: center;
+	padding-right: 20px;
+	padding-top: 5px;
+	font-size: 36px;
 }
 
-.navBarLinks {
-	color: #000000;
-	text-decoration: none;
-}
-
-.sideNavBarLinks {
-	font-size: 26px;
-	color: #000000;
-	text-decoration: none;
+.experienceContent {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 100px;
+	width: inherit;
 }
