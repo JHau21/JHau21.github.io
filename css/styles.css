@@ -294,7 +294,8 @@
 	flex-direction: column;
 	align-items: flex-start;
 	height: inherit;
-	width: 20%;
+	width: 30%;
+	margin-right: 5px;
 	justify-content: space-evenly;
 }
 
@@ -341,4 +342,59 @@
 	align-items: center;
 	padding-top: 100px;
 	width: inherit;
+}
+
+.showinglyContent {
+	width: 80%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 200px;
+	background-color: lightgray;
+	box-shadow: 150px 40px 0px darkgray;
+}
+
+.showinglyJobBrief {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: inherit;
+	width: 30%;
+	margin-right: 5px;
+	justify-content: space-evenly;
+}
+
+.showinglyJobBriefText {
+	margin: 0;
+	padding: 0;
+}
+
+.showinglyJobDesc {
+	height: inherit;
+	width: 80%;
+	margin-top: 10px;
+}
+
+.showinglyJobInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 150px;
+	position: relative;
+	top: -75%;
+	left: 0%;
+	padding: 10px;
+}
+
+.showinglyTitle {
+	position: relative;
+	top: -45%;
+	left: 60%;
+	width: 40%;
+	height: 25%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+	background-color: darkgray;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 36px;
 }
