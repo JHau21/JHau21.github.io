@@ -30,7 +30,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: darkgray;
+	background-color: #000000;
+	color: #ebebeb;
 	width: inherit;
 	height: 75px;
 	padding-top: 10px;
@@ -52,8 +53,25 @@
 	width: 15vw;
 	height: 30px;
 	font-size: 16px;
+	color: #000000;
 	background-color: transparent;
 	border: 3px solid #000000;
+	box-shadow: 0;
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+.hobbyButton:hover {
+	color: #550000;
+	border: 3px solid #550000;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: 5px 5px 0px #550000;
+}
+
+.hobbyButton:active {
+	border: 3px solid #980000;
+	background-color: #980000;
+	color: #ebebeb;
 }
 
 .hobbyButtonTitle {
@@ -86,8 +104,8 @@
 	z-index: 100;
 	overflow: hidden;
 	box-shadow: 0px 1px 30px #363636;
-	background-color: lightgrey;
-	border-bottom: 5px solid darkgray;
+	background-color: #ebebeb;
+	border-bottom: 3px solid #9fa1a2;
 }
 
 .navBarList {
@@ -100,7 +118,7 @@
 	margin: 0;
 	padding: 0;
 	width: 50%;
-	font-size: 20px;
+	font-size: 18px;
 	list-style: none;
 }
 
@@ -108,7 +126,7 @@
 	width: 25%;
 	height: inherit;
 	text-align: center;
-	background-color: darkgray;
+	background-color: #9fa1a2;
 	padding-top: 20px;
 	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
@@ -117,21 +135,41 @@
 	width: 25%;
 	height: inherit;
 	text-align: center;
-	background-color: darkgray;
+	background-color: #9fa1a2;
 	padding-top: 20px;
 	padding-left: 10px;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
 
 .navBarLinks {
-	color: #000000;
+	color: #9fa1a2;
 	text-decoration: none;
+}
+
+.navBarLinks:hover {
+	color: #550000;
+	text-decoration: underline;
+}
+
+.navBarLinks:active {
+	color: #980000;
+	text-decoration: underline;
 }
 
 .sideNavBarLinks {
 	font-size: 26px;
-	color: #000000;
+	color: #ebebeb;
 	text-decoration: none;
+}
+
+.sideNavBarLinks:hover {
+	color: #550000;
+	text-decoration: underline;
+}
+
+.sideNavBarLinks:active {
+	color: #980000;
+	text-decoration: underline;
 }
 
 /* Home Styling */
@@ -141,26 +179,26 @@
 }
 
 .bioContainer {
-	height: 200px;
-	margin-top: 70px;
-	margin-bottom: 70px;
+	height: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	width: inherit;
-	background-color: darkgray;
+	background-image: linear-gradient(90deg, #ebebeb 0%, #550000 100%);
 }
 
 .bioContent {
 	position: relative;
-	bottom: 82%;
+	bottom: 135%;
 	left: 6%;
 	height: 100%;
 	width: 94%;
 }
 
 .bioImage {
-	height: 80%;
+	height: 320px;
 	width: 25%;
 	position: relative;
-	top: -5%;
+	top: -20%;
 	left: -20%;
 	box-shadow: 0px 1px 4px #666666;
 }
@@ -168,10 +206,10 @@
 .bioSubContainer {
 	position: absolute;
 	left: 30%;
-	top: 12%;
+	top: 10%;
 	width: 65%;
 	height: 240px;
-	background-color: lightgray;
+	background-color: #ebebeb;
 	box-shadow: 0px 1px 4px #666666;
 }
 
@@ -207,11 +245,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 200px;
-	margin-top: 70px;
-	margin-bottom: 70px;
+	height: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	width: inherit;
-	background-color: darkgray;
+	background-image: linear-gradient(90deg, #000000 0%, #ebebeb 100%);
 }
 
 .eduWorkContent {
@@ -234,10 +272,10 @@
 .eduWorkSubContainer {
 	position: absolute;
 	left: 12%;
-	top: 41%;
+	top: 38%;
 	width: 65%;
 	height: 240px;
-	background-color: lightgray;
+	background-color: #ebebeb;
 	box-shadow: 0px 1px 4px #666666;
 }
 
@@ -256,20 +294,20 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 200px;
-	margin-top: 70px;
-	margin-bottom: 70px;
+	height: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	width: inherit;
-	background-color: darkgray;
+	background-image: linear-gradient(90deg, #ebebeb 0%, #980000 100%);
 }
 
 .hobbiesSubContainer {
 	position: absolute;
 	left: 19%;
-	top: 70%;
+	top: 66%;
 	width: 65%;
 	height: 240px;
-	background-color: lightgray;
+	background-color: #ebebeb;
 	box-shadow: 0px 1px 4px #666666;
 }
 
@@ -285,8 +323,8 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 200px;
-	background-color: lightgray;
-	box-shadow: 150px 40px 0px darkgray;
+	background-color: #ebebeb;
+	box-shadow: 150px 40px 0px #550000;
 }
 
 .oddContentJobBrief {
@@ -328,7 +366,8 @@
 	width: 40%;
 	height: 25%;
 	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
-	background-color: darkgray;
+	background-color: #550000;
+	color: #ebebeb;
 	text-align: center;
 	padding-right: 20px;
 	padding-top: 5px;
@@ -349,8 +388,8 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 200px;
-	background-color: lightgray;
-	box-shadow: -150px 40px 0px darkgray;
+	background-color: #ebebeb;
+	box-shadow: -150px 40px 0px #980000;
 }
 
 .evenContentJobBrief {
@@ -392,7 +431,8 @@
 	width: 40%;
 	height: 25%;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
-	background-color: darkgray;
+	background-color: #980000;
+	color: #ebebeb;
 	text-align: center;
 	padding-left: 20px;
 	padding-top: 5px;
@@ -404,14 +444,14 @@
 .leftProjectsContainer {
 	height: inherit;
 	width: 60%;
-	background-color: lightgray;
+	background-color: #980000;
 }
 
 .leftTextContainer {
 	height: inherit;
 	width: 40%;
 	padding-right: 20px;
-	background-color: darkgray;
+	background-color: #ebebeb;
 }
 
 .projectContainerGeneral {
@@ -422,7 +462,7 @@
 	height: 40%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: darkgray;
+	background-color: #9fa1a2;
 	box-shadow: 0px 1px 5px #363636;
 }
 
@@ -453,16 +493,15 @@
 }
 
 .projectImage {
-	width: 25%;
+	width: 20%;
 	height: 100%;
-	background-color: lightgray;
 }
 
 .projectInfoText {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 75%;
+	width: 80%;
 	height: 80%;
 	padding: 10px;
 }
@@ -495,14 +534,14 @@
 .rightProjectsContainer {
 	height: inherit;
 	width: 60%;
-	background-color: lightgray;
+	background-color: #550000;
 }
 
 .rightTextContainer {
 	height: inherit;
 	width: 40%;
 	padding-left: 20px;
-	background-color: darkgray;
+	background-color: #ebebeb;
 }
 
 .textHeader {
@@ -536,10 +575,10 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 320px;
+	height: 300px;
 	width: inherit;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* Contact Styling */
@@ -569,7 +608,8 @@
 	margin-bottom: 116px;
 	height: 250px;
 	width: inherit;
-	background-color: darkgray;
+	background-color: #550000;
+	/* background-image: linear-gradient(90deg, #ebebeb 0%, #550000 100%); */
 }
 
 .contactFormContainer {
@@ -577,7 +617,7 @@
 	width: 60%;
 	height: 90%;
 	top: -10%;
-	background-color: lightgray;
+	background-color: #ebebeb;
 }
 
 .contactFormOtherContainer {
@@ -587,7 +627,7 @@
 	height: 12%;
 	top: 56%;
 	padding: 15px;
-	background-color: lightgray;
+	background-color: #ebebeb;
 	box-shadow: 0px 1px 5px #363636;
 }
 
@@ -599,7 +639,8 @@
 	top: 7%;
 	padding-top: 4px;
 	font-size: 36px;
-	background-color: lightgray;
+	background-color: #550000;
+	color: #ebebeb;
 	box-shadow: 0px 1px 5px #363636;
 }
 
@@ -609,4 +650,577 @@
 	padding: 10px;
 	text-align: center;
 	font-size: 16px;
+}
+
+/* Large Monitor Styling */
+
+@media screen and (min-width: 1900px) {
+}
+
+/* Mobile Styling */
+
+@media screen and (max-width: 450px) and (min-width: 0px) {
+	/* NavBar Mobile Re-styling */
+
+	.navContainer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		height: 40px;
+		padding: 0;
+		margin: 0;
+		position: fixed;
+		z-index: 100;
+		overflow: hidden;
+		box-shadow: 0px 1px 30px #363636;
+		background-color: #ebebeb;
+		border-bottom: 3px solid #9fa1a2;
+	}
+
+	.navBarList {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		width: inherit;
+		height: inherit;
+		margin: 0;
+		padding: 0;
+		width: 50%;
+		font-size: 12px;
+		list-style: none;
+	}
+
+	.sideNavBarLinks {
+		font-size: 20px;
+		color: #ebebeb;
+		text-decoration: none;
+	}
+
+	/* Footer Styling */
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #000000;
+		color: #ebebeb;
+		width: inherit;
+		height: 60px;
+		padding-top: 10px;
+	}
+
+	.footerText {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	.footerHeader {
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+	}
+
+	/* Button Styling */
+
+	.hobbyButton {
+		width: 110px;
+		height: 20px;
+		font-size: 12px;
+		color: #000000;
+		background-color: transparent;
+		border: 3px solid #000000;
+		box-shadow: 0;
+		transition: box-shadow 0.5s ease-in-out;
+	}
+
+	.hobbyButton:hover {
+		color: #550000;
+		border: 3px solid #550000;
+		background-color: transparent;
+		cursor: pointer;
+		box-shadow: 5px 5px 0px #550000;
+	}
+
+	.hobbyButton:active {
+		border: 3px solid #980000;
+		background-color: #980000;
+		color: #ebebeb;
+	}
+
+	.hobbyButtonTitle {
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.hobbyTitleAndButton {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* Home Restyling */
+
+	.bio {
+		text-align: left;
+	}
+
+	.bioContainer {
+		height: 250px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: inherit;
+		background-image: linear-gradient(90deg, #ebebeb 0%, #550000 100%);
+	}
+
+	.bioContent {
+		position: relative;
+		bottom: 42%;
+		left: 0%;
+		height: 100%;
+		width: 75%;
+	}
+
+	.bioImage {
+		height: 150px;
+		width: 30%;
+		position: relative;
+		top: 30%;
+		left: 78%;
+		box-shadow: 0px 1px 4px #666666;
+	}
+
+	.bioSubContainer {
+		position: absolute;
+		left: 9%;
+		top: 6%;
+		width: 80%;
+		height: 370px;
+		background-color: #ebebeb;
+		box-shadow: 0px 1px 4px #666666;
+	}
+
+	.contentText {
+		margin: 0;
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	.contentTitle {
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 0;
+		font-size: 20px;
+	}
+
+	.edu {
+		text-align: right;
+	}
+
+	.eduWorkContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 250px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: inherit;
+		background-image: linear-gradient(90deg, #000000 0%, #ebebeb 100%);
+	}
+
+	.eduWorkContent {
+		position: relative;
+		bottom: 36%;
+		left: 15%;
+		height: 90%;
+		width: 85%;
+	}
+
+	.eduWorkImage {
+		height: 110px;
+		width: 35%;
+		position: relative;
+		top: 30%;
+		left: -20%;
+		box-shadow: 0px 1px 4px #666666;
+	}
+
+	.eduWorkSubContainer {
+		position: absolute;
+		left: 17%;
+		top: 38%;
+		width: 80%;
+		height: 320px;
+		background-color: #ebebeb;
+		box-shadow: 0px 1px 4px #666666;
+	}
+
+	.endPageButtons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+
+	.hobbies {
+		text-align: center;
+	}
+
+	.hobbiesContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 250px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		width: inherit;
+		background-image: linear-gradient(90deg, #ebebeb 0%, #980000 100%);
+	}
+
+	.hobbiesSubContainer {
+		position: absolute;
+		left: 3%;
+		top: 66%;
+		width: 95%;
+		height: 270px;
+		background-color: #ebebeb;
+		box-shadow: 0px 1px 4px #666666;
+	}
+
+	/* Projects Restyling */
+
+	.leftProjectsContainer {
+		height: 40%;
+		width: 100%;
+		background-color: #980000;
+		padding-left: 35px;
+	}
+
+	.leftTextContainer {
+		height: 60%;
+		width: 100%;
+		padding-left: 20px;
+		background-color: #ebebeb;
+	}
+
+	.projectContainerGeneral {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 96%;
+		height: 40%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #9fa1a2;
+		box-shadow: 0px 1px 5px #363636;
+	}
+
+	.projectsContent {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		width: inherit;
+	}
+
+	.leftProjectFloatingContainer {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		top: 10%;
+		left: -2%;
+		width: 100%;
+		height: 80%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.projectImage {
+		width: 20%;
+		height: 100%;
+	}
+
+	.projectInfoText {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 80%;
+		height: 80%;
+		padding: 10px;
+	}
+
+	.projectText {
+		margin: 0;
+		padding: 0;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		font-size: 16px;
+	}
+
+	.rightProjectFloatingContainer {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		top: 10%;
+		left: 2%;
+		width: 100%;
+		height: 80%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.rightProjectsContainer {
+		height: 40%;
+		width: 100%;
+		background-color: #550000;
+	}
+
+	.rightTextContainer {
+		height: 60%;
+		width: 100%;
+		padding-left: 20px;
+		background-color: #ebebeb;
+	}
+
+	.textHeader {
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.textParagraph {
+		margin: 0;
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.textParagraphContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: 80%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.textParagraphContainer::-webkit-scrollbar {
+		width: 1px;
+	}
+
+	.textProject {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: inherit;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	/* Experience Restyling */
+
+	.oddContentContent {
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		height: 420px;
+		background-color: #ebebeb;
+		box-shadow: 150px 40px 0px #550000;
+	}
+
+	.oddContentJobBrief {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100px;
+		width: 100%;
+		margin-right: 5px;
+		justify-content: space-evenly;
+	}
+
+	.oddContentJobBriefText {
+		margin: 0;
+		padding: 0;
+	}
+
+	.oddContentJobDesc {
+		height: 300px;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.oddContentJobInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 150px;
+		position: relative;
+		top: -29%;
+		left: 0%;
+		padding: 10px;
+	}
+
+	.oddContentTitle {
+		position: relative;
+		top: -18%;
+		left: -2%;
+		width: 60%;
+		height: 40px;
+		clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+		background-color: #550000;
+		color: #ebebeb;
+		text-align: center;
+		padding-right: 20px;
+		padding-top: 5px;
+		font-size: 26px;
+	}
+
+	.experienceContent {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		width: inherit;
+	}
+
+	.evenContentContent {
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		height: 420px;
+		background-color: #ebebeb;
+		box-shadow: -150px 40px 0px #980000;
+	}
+
+	.evenContentJobBrief {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: inherit;
+		width: 100%;
+		margin-right: 5px;
+		justify-content: space-evenly;
+	}
+
+	.evenContentJobBriefText {
+		margin: 0;
+		padding: 0;
+	}
+
+	.evenContentJobDesc {
+		height: inherit;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.evenContentJobInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 150px;
+		position: relative;
+		top: -29%;
+		left: 0%;
+		padding: 10px;
+	}
+
+	.evenContentTitle {
+		position: relative;
+		top: -17%;
+		left: 60%;
+		width: 60%;
+		height: 40px;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+		background-color: #980000;
+		color: #ebebeb;
+		text-align: center;
+		padding-left: 20px;
+		padding-top: 5px;
+		font-size: 26px;
+	}
+
+	/* Contact Restyling */
+
+	.contactButtonsAndTitles {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+		height: 40px;
+	}
+
+	.contactContent {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		width: inherit;
+	}
+
+	.contactFormBackground {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		height: 300px;
+		width: inherit;
+		background-color: #550000;
+		/* background-image: linear-gradient(90deg, #ebebeb 0%, #550000 100%); */
+	}
+
+	.contactFormContainer {
+		position: relative;
+		width: 90%;
+		height: 100%;
+		top: -10%;
+		background-color: #ebebeb;
+	}
+
+	.contactFormOtherContainer {
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		height: 40px;
+		top: 68%;
+		padding: 15px;
+		background-color: #ebebeb;
+		box-shadow: 0px 1px 5px #363636;
+	}
+
+	.contactFormHeader {
+		position: absolute;
+		text-align: center;
+		width: 60%;
+		height: 40px;
+		top: 9%;
+		padding-top: 4px;
+		font-size: 26px;
+		background-color: #550000;
+		color: #ebebeb;
+		box-shadow: 0px 1px 5px #363636;
+	}
+
+	.contactFormText {
+		margin: 0;
+		margin-top: 35px;
+		padding: 10px;
+		text-align: center;
+		font-size: 16px;
+	}
 }
