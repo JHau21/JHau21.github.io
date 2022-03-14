@@ -444,6 +444,7 @@
 .leftProjectsContainer {
 	height: inherit;
 	width: 60%;
+	background-image: linear-gradient(90deg, #efefef 0%, #980000 100%);
 	background-color: #980000;
 }
 
@@ -534,7 +535,8 @@
 .rightProjectsContainer {
 	height: inherit;
 	width: 60%;
-	background-color: #550000;
+	background-image: linear-gradient(90deg, #550000 0%, #ebebeb 100%);
+	/* background-color: #550000; */
 }
 
 .rightTextContainer {
@@ -1170,6 +1172,7 @@
 		align-items: center;
 		padding-top: 100px;
 		width: inherit;
+		margin-bottom: 130px;
 	}
 
 	.contactFormBackground {
@@ -1197,7 +1200,7 @@
 		text-align: center;
 		width: 70%;
 		height: 40px;
-		top: 68%;
+		top: 55%;
 		padding: 15px;
 		background-color: #ebebeb;
 		box-shadow: 0px 1px 5px #363636;
