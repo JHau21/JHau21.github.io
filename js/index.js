@@ -1,13 +1,12 @@
 window.onload = windowLoaded;
 
 function windowLoaded() {
-	console.log("yo yo yo");
-	document
-		.getElementById("button-one")
-		.addEventListener("mousedown", onClickOne);
-	document
-		.getElementById("button-two")
-		.addEventListener("onmouse", onClickTwo);
+	let buttonOne = document.getElementById("button-one");
+	buttonOne.addEventListener("mousedown", onClickOne);
+	buttonOne.addEventListener("mouseover", onHoverOne);
+	let buttonTwo = document.getElementById("button-two");
+	buttonTwo.addEventListener("mousedown", onClickTwo);
+	buttonTwo.addEventListener("mouseover", onHoverTwo);
 }
 
 function onClickOne() {
@@ -15,5 +14,15 @@ function onClickOne() {
 }
 
 function onClickTwo() {
-	window.open("img/me.jpg", "_blank");
+	window.open("https://jhau21.github.io/img/me.jpg", "_blank");
+}
+
+function onHoverOne() {
+	let buttonOne = document.getElementById("button-one");
+	buttonOne.classList.toggle("buttonHover");
+}
+
+function onHoverTwo() {
+	let buttonTwo = document.getElementById("button-two");
+	buttonTwo.classList.toggle("buttonHover");
 }
