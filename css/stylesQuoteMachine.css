@@ -1,0 +1,62 @@
+.quoteMachineContainer {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 80px;
+}
+
+.quoteButton {
+	justify-self: center;
+	width: 210px;
+	height: 40px;
+	border: 3px solid #000000;
+	border-radius: 5px;
+	background-color: transparent;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+.quoteButton:hover {
+	border: 3px solid #550000;
+	color: #550000;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: 5px 5px 0px #550000;
+}
+
+.quoteButton:active {
+	border: 3px solid #980000;
+	background-color: #980000;
+	color: #ebebeb;
+}
+
+.quoteContainer {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	width: 40%;
+	height: 400px;
+	justify-content: center;
+	background-color: #ebebeb;
+	border-radius: 10px;
+}
+
+.quoteHeader {
+	width: 400px;
+	height: 32px;
+	font-size: 26px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
+.quotePContainer {
+	width: 400px;
+	height: 220px;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+}
