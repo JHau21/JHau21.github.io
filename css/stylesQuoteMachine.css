@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .quoteButton {
@@ -37,15 +37,23 @@
 .quoteContainer {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
-	width: 40%;
-	height: 400px;
+	width: 50%;
+	height: 500px;
 	justify-content: center;
 	background-color: #ebebeb;
-	border-radius: 10px;
+	box-shadow: 25px 25px 0px #550000;
+}
+
+.quoteGeneratorDesc {
+	width: 500px;
+	height: 150px;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
 }
 
 .quoteHeader {
-	width: 400px;
+	width: 500px;
 	height: 32px;
 	font-size: 26px;
 	font-weight: medium;
@@ -54,8 +62,41 @@
 }
 
 .quotePContainer {
-	width: 400px;
-	height: 220px;
+	width: 500px;
+	height: 160px;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.quoteP {
+	width: 500px;
+	height: 50%;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+}
+
+.quoteAuthor {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 500px;
+	height: 50%;
+	font-size: 18px;
+	font-weight: medium;
+	font-family: "Roboto", sans-serif;
+}
+
+.quoteAuthorP {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1;
 	font-size: 18px;
 	font-weight: medium;
 	font-family: "Roboto", sans-serif;

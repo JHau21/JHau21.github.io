@@ -11,9 +11,17 @@
 		<div class="quoteMachineContainer">
 			<div class="quoteContainer">
 				<h2 class="quoteHeader">Quote Generator</h2>
-				<p class="quotePContainer" id="quoteContainerElement">
-					Select a quote...
-				</p>
+				<div class="quotePContainer">
+					<div class="quoteAuthor">
+						Author
+						<p class="quoteAuthorP" id="quoteAuthorContainer">
+							:
+						</p>
+					</div>
+					<p class="quoteP" id="quoteContainerElement">
+						Select a quote...
+					</p>
+				</div>
 				<button
 					type="button"
 					id="generateQuoteButton"
@@ -21,6 +29,16 @@
 				>
 					Generate Quote
 				</button>
+				<p class="quoteGeneratorDesc" id="quoteContainerElement">
+					This is a heroku app quote generator that sends out a
+					random quote. The types of quotes range from
+					inspirational and motivational to more comedic. The
+					authors for the quotes are generally celebrities and
+					well-known individuals. The API also sends the quotes
+					in arrays, so multiple quotes can be generated at once!
+					For this implementation, I have only allowed for one
+					quote to be generated at a time.
+				</p>
 			</div>
 		</div>
 	</body>
