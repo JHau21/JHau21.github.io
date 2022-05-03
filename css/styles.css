@@ -318,125 +318,135 @@
 
 /* Experience Styling */
 
-.oddContentContent {
-	width: 80%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: 200px;
-	background-color: #ebebeb;
-	box-shadow: 150px 40px 0px #550000;
+.animation {
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
-.oddContentJobBrief {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	height: inherit;
-	width: 30%;
-	margin-right: 5px;
-	justify-content: space-evenly;
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.oddContentJobBriefText {
-	margin: 0;
-	padding: 0;
-}
-
-.oddContentJobDesc {
-	height: inherit;
-	width: 80%;
-	margin-top: 10px;
-}
-
-.oddContentJobInfo {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 150px;
-	position: relative;
-	top: -75%;
-	left: 0%;
-	padding: 10px;
-}
-
-.oddContentTitle {
-	position: relative;
-	top: -45%;
-	left: -2%;
-	width: 40%;
-	height: 25%;
-	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
-	background-color: #550000;
+.carouselButtonCommon {
+	position: absolute;
+	z-index: 11;
+	top: 60%;
+	width: auto;
 	color: #ebebeb;
-	text-align: center;
-	padding-right: 20px;
-	padding-top: 5px;
-	font-size: 36px;
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s ease;
 }
 
-.experienceContent {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 100px;
+.carouselButtonCommon:hover {
+	cursor: pointer;
+	color: #550000;
+}
+
+.carouselBackgroundImage {
+	height: inherit;
 	width: inherit;
 }
 
-.evenContentContent {
-	width: 80%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: 200px;
-	background-color: #ebebeb;
-	box-shadow: -150px 40px 0px #980000;
+/* Need to style this bar and add it to javascript stuff */
+
+.carouselProgressBar {
+	/* width: 200px;
+	border-radius: 25px;
+	border: none; */
 }
 
-.evenContentJobBrief {
+.carouselWindow {
+	height: 460px;
+	width: 100%;
+}
+
+.carouselTextBoxesContainer {
+	position: absolute;
+	z-index: 10;
+	bottom: 9.5%;
+	left: 0%;
+	height: 51%;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	padding-left: 70px;
+	background-color: rgb(0, 0, 0, 0.4);
+	display: none;
+}
+
+.carouselTextContent {
+	position: relative;
+	height: 100%;
+	width: 30%;
+	margin-right: 20px;
+	font-size: 18px;
+	color: #ebebeb;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	height: inherit;
-	width: 30%;
-	margin-right: 5px;
-	justify-content: space-evenly;
 }
 
-.evenContentJobBriefText {
+.carouselTextDescription {
+	position: relative;
+	height: 100%;
+	width: 70%;
+	font-size: 18px;
+	color: #ebebeb;
+}
+
+.carouselTextJobBrief {
 	margin: 0;
+	margin-bottom: 15px;
 	padding: 0;
 }
 
-.evenContentJobDesc {
-	height: inherit;
-	width: 80%;
-	margin-top: 10px;
-}
-
-.evenContentJobInfo {
+.carouselTextNonTitleContainer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 150px;
-	position: relative;
-	top: -75%;
-	left: 0%;
-	padding: 10px;
+	width: 92%;
+	height: 100%;
 }
 
-.evenContentTitle {
+.carouselTextTitle {
 	position: relative;
-	top: -45%;
-	left: 60%;
-	width: 40%;
-	height: 25%;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
-	background-color: #980000;
+	height: 50px;
+	width: 95%;
+	font-size: 26px;
 	color: #ebebeb;
-	text-align: center;
-	padding-left: 20px;
-	padding-top: 5px;
-	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.left {
+	left: 2%;
+}
+
+.right {
+	right: 2%;
+}
+
+.progressContainer {
+	position: absolute;
+	z-index: 11;
+	bottom: 13%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 20px;
+}
+
+.experienceIntroductionContainer {
+	width: 100%;
+	height: 200px;
 }
 
 /* Project Styling */
