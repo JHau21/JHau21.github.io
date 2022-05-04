@@ -183,7 +183,7 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: inherit;
-	background-image: linear-gradient(90deg, #ebebeb 0%, #550000 100%);
+	background-color: #ebebeb;
 }
 
 .bioContent {
@@ -249,7 +249,7 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: inherit;
-	background-image: linear-gradient(90deg, #000000 0%, #ebebeb 100%);
+	background-color: #550000;
 }
 
 .eduWorkContent {
@@ -298,7 +298,7 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: inherit;
-	background-image: linear-gradient(90deg, #ebebeb 0%, #980000 100%);
+	background-color: #666666;
 }
 
 .hobbiesSubContainer {
@@ -316,26 +316,49 @@
 	color: #000000;
 }
 
-/* Experience Styling */
-
-.animation {
-	animation-name: fade;
-	animation-duration: 1.5s;
+.searchContainer {
+	width: 100%;
+	margin-top: 50px;
+	height: 100px;
+	background-color: #ebebeb;
 }
 
-@keyframes fade {
+/* Experience and Project Styling (Carousel) */
+
+.animationIn {
+	animation-name: slide-in;
+	animation-duration: 1s;
+	animation-direction: normal;
+}
+
+.animationOut {
+	animation-name: slide-out;
+	animation-duration: 1s;
+	animation-direction: normal;
+}
+
+@keyframes slide-in {
 	from {
-		opacity: 0.4;
+		left: -100%;
 	}
 	to {
-		opacity: 1;
+		left: 0%;
+	}
+}
+
+@keyframes slide-out {
+	from {
+		left: 0%;
+	}
+	to {
+		left: 100%;
 	}
 }
 
 .carouselButtonCommon {
 	position: absolute;
 	z-index: 11;
-	top: 60%;
+	top: 45%;
 	width: auto;
 	color: #ebebeb;
 	font-weight: bold;
@@ -349,29 +372,28 @@
 }
 
 .carouselBackgroundImage {
-	height: inherit;
-	width: inherit;
-}
-
-/* Need to style this bar and add it to javascript stuff */
-
-.carouselProgressBar {
-	/* width: 200px;
-	border-radius: 25px;
-	border: none; */
+	position: absolute;
+	z-index: 9;
+	bottom: 14%;
+	left: 0%;
+	height: 74%;
+	width: 100%;
+	display: none;
 }
 
 .carouselWindow {
-	height: 460px;
+	height: 540px;
 	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
 
 .carouselTextBoxesContainer {
 	position: absolute;
 	z-index: 10;
-	bottom: 9.5%;
+	bottom: 14%;
 	left: 0%;
-	height: 51%;
+	height: 66%;
 	width: 95%;
 	display: flex;
 	flex-direction: column;
@@ -433,164 +455,35 @@
 	right: 2%;
 }
 
+.progressBox {
+	height: 100%;
+	width: 33.3%;
+}
+
+.progressBoxActive {
+	background-color: #550000;
+}
+
+.progressBoxesContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 20%;
+	height: inherit;
+	border-radius: 25px;
+	overflow: hidden;
+	border: 3px solid #ebebeb;
+}
+
 .progressContainer {
 	position: absolute;
 	z-index: 11;
-	bottom: 13%;
+	bottom: 20%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	height: 20px;
-}
-
-.experienceIntroductionContainer {
-	width: 100%;
-	height: 200px;
-}
-
-/* Project Styling */
-
-.leftProjectsContainer {
-	height: inherit;
-	width: 60%;
-	background-image: linear-gradient(90deg, #efefef 0%, #980000 100%);
-	background-color: #980000;
-}
-
-.leftTextContainer {
-	height: inherit;
-	width: 40%;
-	padding-right: 20px;
-	background-color: #ebebeb;
-}
-
-.projectContainerGeneral {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: inherit;
-	height: 40%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: #9fa1a2;
-	box-shadow: 0px 1px 5px #363636;
-}
-
-.projectsContent {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 100px;
-	width: inherit;
-}
-
-.leftProjectFloatingContainer {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	top: 10%;
-	left: -2%;
-	width: 100%;
-	height: 80%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.leftProjectFloatingContainer::-webkit-scrollbar {
-	width: 1px; /* Hide scroll bar, but still allow for scrolling */
-}
-
-.projectImage {
-	width: 20%;
-	height: 100%;
-}
-
-.projectInfoText {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 80%;
-	height: 80%;
-	padding: 10px;
-}
-
-.projectText {
-	margin: 0;
-	padding: 0;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	font-size: 16px;
-}
-
-.rightProjectFloatingContainer {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	top: 10%;
-	left: 2%;
-	width: 100%;
-	height: 80%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.rightProjectFloatingContainer::-webkit-scrollbar {
-	width: 1px; /* Hide scroll bar, but still allow for scrolling */
-}
-
-.rightProjectsContainer {
-	height: inherit;
-	width: 60%;
-	background-image: linear-gradient(90deg, #550000 0%, #ebebeb 100%);
-	/* background-color: #550000; */
-}
-
-.rightTextContainer {
-	height: inherit;
-	width: 40%;
-	padding-left: 20px;
-	background-color: #ebebeb;
-}
-
-.textHeader {
-	margin: 0;
-	padding: 0;
-	padding-top: 10px;
-	font-size: 36px;
-	text-align: center;
-}
-
-.textParagraph {
-	margin: 0;
-	padding: 10px;
-	font-size: 16px;
-}
-
-.textParagraphContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	height: 80%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.textParagraphContainer::-webkit-scrollbar {
-	width: 1px;
-}
-
-.textProject {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 300px;
-	width: inherit;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 /* Contact Styling */
@@ -906,262 +799,140 @@
 		box-shadow: 0px 1px 4px #666666;
 	}
 
-	/* Projects Restyling */
+	/* Experience and Project Restyling (Carousel) */
 
-	.leftProjectsContainer {
-		height: 40%;
-		width: 100%;
-		background-color: #980000;
-		padding-left: 35px;
+	.carouselButtonCommon {
+		position: absolute;
+		z-index: 11;
+		top: 45%;
+		width: auto;
+		color: #ebebeb;
+		font-weight: bold;
+		font-size: 25px;
+		transition: 0.6s ease;
 	}
 
-	.leftTextContainer {
-		height: 60%;
-		width: 100%;
-		padding-left: 20px;
-		background-color: #ebebeb;
+	.carouselButtonCommon:hover {
+		cursor: pointer;
+		color: #550000;
 	}
 
-	.projectContainerGeneral {
+	.carouselBackgroundImage {
+		position: absolute;
+		z-index: 9;
+		bottom: 14%;
+		left: 0%;
+		height: 74%;
+		width: 100%;
+		display: none;
+	}
+
+	.carouselWindow {
+		height: 340px;
+		width: 100%;
+		margin-top: 60px;
+		margin-bottom: 100px;
+	}
+
+	.carouselTextBoxesContainer {
+		position: absolute;
+		z-index: 10;
+		bottom: 14%;
+		left: 0%;
+		height: 64%;
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px;
+		padding-left: 30px;
+		background-color: rgb(0, 0, 0, 0.4);
+		display: none;
+	}
+
+	.carouselTextContent {
+		position: relative;
+		height: 100%;
+		width: 30%;
+		margin-right: 5px;
+		font-size: 18px;
+		color: #ebebeb;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		overflow-y: scroll;
+	}
+
+	.carouselTextDescription {
+		position: relative;
+		height: 100%;
+		width: 70%;
+		font-size: 18px;
+		color: #ebebeb;
+		overflow-y: scroll;
+	}
+
+	.carouselTextJobBrief {
+		margin: 0;
+		margin-bottom: 15px;
+		padding: 0;
+	}
+
+	.carouselTextNonTitleContainer {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		width: 96%;
-		height: 40%;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		background-color: #9fa1a2;
-		box-shadow: 0px 1px 5px #363636;
-	}
-
-	.projectsContent {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 100px;
-		width: inherit;
-	}
-
-	.leftProjectFloatingContainer {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		top: 10%;
-		left: -2%;
-		width: 100%;
-		height: 80%;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-
-	.projectImage {
-		width: 20%;
-		height: 100%;
-	}
-
-	.projectInfoText {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		width: 80%;
-		height: 80%;
-		padding: 10px;
-	}
-
-	.projectText {
-		margin: 0;
-		padding: 0;
-		margin-top: 4px;
-		margin-bottom: 4px;
-		font-size: 16px;
-	}
-
-	.rightProjectFloatingContainer {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		top: 10%;
-		left: 2%;
-		width: 100%;
-		height: 80%;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-
-	.rightProjectsContainer {
-		height: 40%;
-		width: 100%;
-		background-color: #550000;
-	}
-
-	.rightTextContainer {
+		width: 92%;
 		height: 60%;
-		width: 100%;
-		padding-left: 20px;
-		background-color: #ebebeb;
+		overflow: scroll;
 	}
 
-	.textHeader {
-		margin: 0;
-		padding: 0;
-		padding-top: 10px;
-		font-size: 36px;
-		text-align: center;
-	}
-
-	.textParagraph {
-		margin: 0;
-		padding: 10px;
-		font-size: 16px;
-	}
-
-	.textParagraphContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		height: 80%;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-
-	.textParagraphContainer::-webkit-scrollbar {
-		width: 1px;
-	}
-
-	.textProject {
-		flex: 2;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: inherit;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-
-	/* Experience Restyling */
-
-	.oddContentContent {
-		width: 100%;
-		margin-top: 50px;
+	.carouselTextTitle {
+		position: relative;
+		height: 50px;
+		width: 95%;
+		font-size: 26px;
+		color: #ebebeb;
 		margin-bottom: 50px;
-		height: 420px;
-		background-color: #ebebeb;
-		box-shadow: 150px 40px 0px #550000;
 	}
 
-	.oddContentJobBrief {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		height: 100px;
-		width: 100%;
-		margin-right: 5px;
-		justify-content: space-evenly;
+	.left {
+		left: 2%;
 	}
 
-	.oddContentJobBriefText {
-		margin: 0;
-		padding: 0;
+	.right {
+		right: 2%;
 	}
 
-	.oddContentJobDesc {
-		height: 300px;
-		width: 100%;
-		margin-top: 10px;
+	.progressBox {
+		height: 100%;
+		width: 33.3%;
 	}
 
-	.oddContentJobInfo {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 150px;
-		position: relative;
-		top: -29%;
-		left: 0%;
-		padding: 10px;
-	}
-
-	.oddContentTitle {
-		position: relative;
-		top: -18%;
-		left: -2%;
-		width: 60%;
-		height: 40px;
-		clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+	.progressBoxActive {
 		background-color: #550000;
-		color: #ebebeb;
-		text-align: center;
-		padding-right: 20px;
-		padding-top: 5px;
-		font-size: 26px;
 	}
 
-	.experienceContent {
-		flex: 1;
+	.progressBoxesContainer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 20%;
+		height: inherit;
+		border-radius: 25px;
+		overflow: hidden;
+		border: 3px solid #ebebeb;
+	}
+
+	.progressContainer {
+		position: absolute;
+		z-index: 11;
+		bottom: 20%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 100px;
-		width: inherit;
-	}
-
-	.evenContentContent {
 		width: 100%;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		height: 420px;
-		background-color: #ebebeb;
-		box-shadow: -150px 40px 0px #980000;
-	}
-
-	.evenContentJobBrief {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		height: inherit;
-		width: 100%;
-		margin-right: 5px;
-		justify-content: space-evenly;
-	}
-
-	.evenContentJobBriefText {
-		margin: 0;
-		padding: 0;
-	}
-
-	.evenContentJobDesc {
-		height: inherit;
-		width: 100%;
-		margin-top: 10px;
-	}
-
-	.evenContentJobInfo {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 150px;
-		position: relative;
-		top: -29%;
-		left: 0%;
-		padding: 10px;
-	}
-
-	.evenContentTitle {
-		position: relative;
-		top: -17%;
-		left: 60%;
-		width: 60%;
-		height: 40px;
-		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
-		background-color: #980000;
-		color: #ebebeb;
-		text-align: center;
-		padding-left: 20px;
-		padding-top: 5px;
-		font-size: 26px;
+		height: 20px;
 	}
 
 	/* Contact Restyling */

@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./css/styles.css" />
-		<script src="./js/carousel.js"></script>
+		<script defer src="./js/carousel.js"></script>
 	</head>
 	<body>
 		<div class="root">
@@ -51,14 +51,6 @@
 							Contact
 						</a>
 					</li>
-					<li>
-						<a
-							class="navBarLinks"
-							href="http://JHau21.github.io/search.html"
-						>
-							Search
-						</a>
-					</li>
 				</ul>
 				<div class="navBarLinkedIn">
 					<a
@@ -70,13 +62,12 @@
 				</div>
 			</nav>
 			<div class="experienceContent">
-				<div class="experienceIntroductionContainer"></div>
 				<div class="carouselWindow">
 					<img
 						class="carouselBackgroundImage"
 						src="./img/dataBackupSymbol.png"
 					/>
-					<div class="carouselTextBoxesContainer animation">
+					<div class="carouselTextBoxesContainer">
 						<div
 							class="carouselTextTitle contentFontTitleGeneral"
 						>
@@ -130,9 +121,9 @@
 					</div>
 					<img
 						class="carouselBackgroundImage"
-						src="./img/dataBackupSymbol.png"
+						src="./img/realEstateSymbol.png"
 					/>
-					<div class="carouselTextBoxesContainer animation">
+					<div class="carouselTextBoxesContainer">
 						<div
 							class="carouselTextTitle contentFontTitleGeneral"
 						>
@@ -186,9 +177,9 @@
 					</div>
 					<img
 						class="carouselBackgroundImage"
-						src="./img/dataBackupSymbol.png"
+						src="./img/discountTireImage.jpg"
 					/>
-					<div class="carouselTextBoxesContainer animation">
+					<div class="carouselTextBoxesContainer">
 						<div
 							class="carouselTextTitle contentFontTitleGeneral"
 						>
@@ -252,7 +243,20 @@
 						>&#10095;</a
 					>
 					<div class="progressContainer">
-						<progress class="carouselProgressBar"></progress>
+						<div class="progressBoxesContainer">
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+						</div>
 					</div>
 				</div>
 			</div>

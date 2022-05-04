@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./css/styles.css" />
+		<script defer src="./js/carousel.js"></script>
 	</head>
 	<body>
 		<div class="root">
@@ -50,14 +51,6 @@
 							Contact
 						</a>
 					</li>
-					<li>
-						<a
-							class="navBarLinks"
-							href="http://JHau21.github.io/search.html"
-						>
-							Search
-						</a>
-					</li>
 				</ul>
 				<div class="navBarLinkedIn">
 					<a
@@ -69,111 +62,37 @@
 				</div>
 			</nav>
 			<div class="projectsContent">
-				<!-- <div class="textProject">
-					<div class="rightProjectsContainer">
-						<div class="rightProjectFloatingContainer">
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/betsolLogo.jpg"
-									alt="BETSOL Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b> Zamanda
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b> Network
-										Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration: </b>Feb.
-										2022 - Present
-									</p>
-								</div>
-							</div>
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/blueShowinglyLogo.png"
-									alt="Showingly Blue Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b>
-										Showingly Agent's App
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b>
-										Full-Stack Mobile Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration:</b> June
-										2021 - Oct. 2021
-									</p>
-								</div>
-							</div>
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/showinglyGrayBackground.jpg"
-									alt="Showingly Gray Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b>
-										Showingly Brokerage
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b>
-										Full-Stack Web Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration:</b> April
-										2021 - June 2021
-									</p>
-								</div>
-							</div>
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/originalShowinglyLogo.webp"
-									alt="Showingly Original Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b>
-										Showingly Agent's Web
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b>
-										Full-Stack Web Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration:</b> Dec.
-										2020 - April 2021
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="rightTextContainer">
-						<h5 class="textHeader contentFontTitleGeneral">
-							Work Projects
-						</h5>
+				<div class="carouselWindow">
+					<img
+						class="carouselBackgroundImage"
+						src="./img/networkSymbol.jpg"
+					/>
+					<div class="carouselTextBoxesContainer">
 						<div
-							class="textParagraphContainer contentFontTextGeneral"
+							class="carouselTextTitle contentFontTitleGeneral"
 						>
-							<p class="textParagraph">
-								<b>Zamanda</b>
+							Work Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b> Zamanda
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b> Network
+									Development
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Duration: </b>Feb. 2022
+									- Present
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involves using C/C++,
 								Python, Perl, and Markdown to document
 								and map out the Zamanda's foundation
@@ -192,9 +111,40 @@
 								create an improved version of Amanda to
 								better the larger 30 person team
 								developing Zamanda.
-							</p>
-							<p class="textParagraph">
-								<b>Showingly Agent's App</b>
+							</div>
+						</div>
+					</div>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/agentsAppSymbol.jpg"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							Work Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b>
+									Showingly Agent's App
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b>
+									Full-Stack Mobile Development
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Duration:</b> June 2021
+									- Oct. 2021
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involved the use of React
 								Native, Objective C, Redux, and MongoDB
 								to develop a mobile application that
@@ -214,9 +164,41 @@
 								various features, making DB schema
 								changes for new functionality, and
 								cleaning up legacy code.
-							</p>
-							<p class="textParagraph">
-								<b>Showingly Brokerage</b>
+							</div>
+						</div>
+					</div>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/brokerageSymbol.webp"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							Work Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b>
+									Showingly Brokerage Web
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b>
+									Full-Stack Web Development
+								</p>
+
+								<p class="carouselTextJobBrief">
+									<b>Project Duration:</b> April 2021
+									- June 2021
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involved the use of
 								React.js, Typescript, Redux, HTML, CSS,
 								and MongoDB to develop a web application
@@ -237,9 +219,41 @@
 								features, making DB schema changes for
 								new functionality, and cleaning up
 								legacy code.
-							</p>
-							<p class="textParagraph">
-								<b>Showingly Agent's Web</b>
+							</div>
+						</div>
+					</div>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/agentsWebSymbol.png"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							Work Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b>
+									Showingly Agent's Web
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b>
+									Full-Stack Web Development
+								</p>
+
+								<p class="carouselTextJobBrief">
+									<b>Project Duration:</b> Dec. 2020
+									- April 2021
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involved the use of
 								React.js, Javascript, Redux, HTML, CSS,
 								and MongoDB to develop a web application
@@ -260,20 +274,41 @@
 								and back-end of various features, making
 								DB schema changes for new functionality,
 								and cleaning up legacy code.
-							</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="textProject">
-					<div class="leftTextContainer">
-						<h5 class="textHeader contentFontTitleGeneral">
-							Personal Projects
-						</h5>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/stagingAndDesignSymbol.jpg"
+					/>
+					<div class="carouselTextBoxesContainer">
 						<div
-							class="textParagraphContainer contentFontTextGeneral"
+							class="carouselTextTitle contentFontTitleGeneral"
 						>
-							<p class="textParagraph">
-								<b>Staging and Design Web:</b>
+							Personal Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b> Staging and
+									Design Web
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b> Web
+									Development
+								</p>
+
+								<p class="carouselTextJobBrief">
+									<b>Project Duration: </b>May 2021 -
+									Present
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involves using React.js,
 								Typescript, Redux, HTML, CSS, and
 								MongoDB to develop a website for my
@@ -284,153 +319,187 @@
 								active locations, and the ability to
 								manage and schedule appointments with
 								her.
-							</p>
-							<p class="textParagraph">
-								<b>Administrative Auto Messenger:</b>
+							</div>
+						</div>
+					</div>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/twilioSymbol.jpg"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							Personal Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
+									<b>Project Title:</b>
+									Administrative Auto Messenger
+								</p>
+								<p class="carouselTextJobBrief">
+									<b>Project Work:</b> Server and API
+									Development
+								</p>
+
+								<p class="carouselTextJobBrief">
+									<b>Project Duration:</b> Jan. 2022
+									- Present
+								</p>
+							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
 								This project involves using NodeJS and
 								the Twilio API to build out a bot that
 								sends and recieves messages relating to
 								important fraternity events and
 								information. It also includes an RSVP
 								system to event attendance.
-							</p>
-						</div>
-					</div>
-					<div class="leftProjectsContainer">
-						<div class="leftProjectFloatingContainer">
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/homeLogo.png"
-									alt="Home Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b> Staging
-										and Design Web
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b> Web
-										Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration: </b>May
-										2021 - Present
-									</p>
-								</div>
-							</div>
-							<div class="projectContainerGeneral">
-								<img
-									class="projectImage"
-									src="./img/twilioLogo.png"
-									alt="Twilio Logo"
-								/>
-								<div
-									class="projectInfoText contentFontTextGeneral"
-								>
-									<p class="projectText">
-										<b>Project Title:</b>
-										Administrative Auto Messenger
-									</p>
-									<p class="projectText">
-										<b>Project Work:</b> Server
-										and API Development
-									</p>
-									<p class="projectText">
-										<b>Project Duration:</b> Jan.
-										2022 - Present
-									</p>
-								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="textProject">
-				<div class="rightProjectsContainer">
-					<div class="rightProjectFloatingContainer">
-						<div class="projectContainerGeneral">
-							<img
-								class="projectImage"
-								src="./img/cocktailImage.jpg"
-								alt="CockTail Image"
-							/>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/cocktailImage.jpg"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							School Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
 							<div
-								class="projectInfoText contentFontTextGeneral"
+								class="carouselTextContent contentFontTextGeneral"
 							>
-								<p class="projectText">
+								<p class="carouselTextJobBrief">
 									<b>Project Title:</b> Mixr
 								</p>
-								<p class="projectText">
+								<p class="carouselTextJobBrief">
 									<b>Project Work:</b> Web
 									Development
 								</p>
-								<p class="projectText">
+
+								<p class="carouselTextJobBrief">
 									<b>Project Duration: </b>Jan. 2021
 									- May 2021
 								</p>
 							</div>
-						</div>
-						<div class="projectContainerGeneral">
-							<img
-								class="projectImage"
-								src="./img/terminalLogo.svg"
-								alt="Terminal Logo"
-							/>
+
 							<div
-								class="projectInfoText contentFontTextGeneral"
+								class="carouselTextDescription contentFontTextGeneral"
 							>
-								<p class="projectText">
+								This project involved using NodeJS,
+								Javascript, HTML, CSS, and MongoDB to
+								develop a platform that allowed user to
+								find, create, and share mixed drinks. As
+								Software Developer on this project, I
+								worked with a small team of 5
+								individuals and I handled all back-end
+								and database functionality, primarily
+								writing Javascript back-end functions,
+								designing and developing database
+								schemas, and ensuring all user data was
+								consistent on the front-end. This
+								project was developed for my Software
+								Development and Tools course.
+							</div>
+						</div>
+					</div>
+					<img
+						class="carouselBackgroundImage"
+						src="./img/terminalSymbol.png"
+					/>
+					<div class="carouselTextBoxesContainer">
+						<div
+							class="carouselTextTitle contentFontTitleGeneral"
+						>
+							School Project
+						</div>
+						<div class="carouselTextNonTitleContainer">
+							<div
+								class="carouselTextContent contentFontTextGeneral"
+							>
+								<p class="carouselTextJobBrief">
 									<b>Project Title:</b> Shell Lab
 								</p>
-								<p class="projectText">
+								<p class="carouselTextJobBrief">
 									<b>Project Work:</b> Shell
 									Development
 								</p>
-								<p class="projectText">
+
+								<p class="carouselTextJobBrief">
 									<b>Project Duration: </b>Nov. 2020
 									- Dec. 2020
 								</p>
 							</div>
+
+							<div
+								class="carouselTextDescription contentFontTextGeneral"
+							>
+								This project involved using C to develop
+								an interactive terminal shell. The
+								project involved writing signal handlers
+								to manage everything from echo to
+								running a process. On this project I
+								worked with a partner and we
+								collaboratively developed the shell in
+								only around 2 weeks.
+							</div>
+						</div>
+					</div>
+					<a
+						class="carouselButtonCommon left"
+						onclick="onClickArrow(-1)"
+						>&#10094;</a
+					>
+					<a
+						class="carouselButtonCommon right"
+						onclick="onClickArrow(1)"
+						>&#10095;</a
+					>
+					<div class="progressContainer">
+						<div class="progressBoxesContainer">
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
+							<div
+								class="progressBox"
+								onclick="onChangeBox(1)"
+							></div>
 						</div>
 					</div>
 				</div>
-				<div class="rightTextContainer">
-					<h5 class="textHeader contentFontTitleGeneral">
-						Academic Projects
-					</h5>
-					<div
-						class="textParagraphContainer contentFontTextGeneral"
-					>
-						<p class="textParagraph">
-							<b>Mixr</b>
-							This project involved using NodeJS,
-							Javascript, HTML, CSS, and MongoDB to develop
-							a platform that allowed user to find, create,
-							and share mixed drinks. As Software Developer
-							on this project, I worked with a small team
-							of 5 individuals and I handled all back-end
-							and database functionality, primarily writing
-							Javascript back-end functions, designing and
-							developing database schemas, and ensuring all
-							user data was consistent on the front-end.
-							This project was developed for my Software
-							Development and Tools course.
-						</p>
-						<p class="textParagraph">
-							<b>Shell Lab</b>
-							This project involved using C to develop an
-							interactive terminal shell. The project
-							involved writing signal handlers to manage
-							everything from echo to running a process. On
-							this project I worked with a partner and we
-							collaboratively developed the shell in only
-							around 2 weeks.
-						</p>
-					</div>
-				</div> -->
 			</div>
 			<footer class="footer">
 				<h3 class="footerHeader contentFontTitleGeneral">
